@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Palavras</title>
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+	<script src="lista_de_palavras.js"></script>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+	<div id="app">
+		<h1>Palavra do dia</h1>
+
+		<div :class="['cobertura', showModal] " >
+			<div class="modal">
+				<div class="titulo">{{titulo}}</div>
+				<div class="mensagem">{{mensagem}}</div>
+				<button @click="novoJogo">Novo Jogo</button>
+			</div>
+		</div>
+
+		<div v-for="(palavra, index) in palavras" class="palavra">
+			<div v-for="nLetra in [0,1,2,3,4]" :class="['letra', dicas[index][nLetra]]">
+				<span>{{palavras[index][nLetra]}}</span>
+			</div>
+		</div>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>

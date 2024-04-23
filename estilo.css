@@ -1,0 +1,96 @@
+body, html {
+	margin: 0;
+	padding-top: 0;
+}
+h1 {
+	background-color: #ffc7b3;
+	color: #661b00;
+	padding: 1rem 3rem;
+	margin-top: 0;
+}
+.palavra {
+	display: flex;
+	flex-direction: row;
+	margin: 0.8rem 3rem;
+	justify-content: space-around;
+}
+
+.letra {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #802200;
+	width: 3rem;
+	height: 3rem;
+	background-color: #FFCFC0;
+	color: #0080AF;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: 700;
+	font-size: larger;
+	border-radius: 3px;
+}
+
+.meio {
+	background-color: #f5dfb1;
+}
+
+.certo {
+	background-color: #90CC90;
+}
+
+.nada {
+	background-color: #CCC;
+}
+
+.cobertura {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	top: 0;
+	background-color: #DDDD;
+	display: flex;
+	/*align-items: center;*/
+	justify-content: center;
+}
+
+.modal {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+
+.modal button {
+	border: 2px outset #A05230;
+	padding: 1rem;
+
+	background-color: #FFCFC0;
+	color: #0080AF;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: 700;
+	font-size: larger;
+	border-radius: 3px;
+}
+
+.titulo {
+	font-size: 36px;
+	font-weight: 700;
+	font-family: 'Courier New', Courier, monospace;
+	color: #0080AF;
+}
+
+.mensagem {
+	font-size: 16px;
+	font-weight: 300;
+	font-family: 'Courier New', Courier, monospace;
+	color: #af0000;
+}
+
+.modal button:active {
+	border: 2px inset #A05230;
+}
+
+.oculto {
+	display: none;
+}
